@@ -2,6 +2,10 @@ plugins {
     id "com.android.application"
     id "kotlin-android"
     id "dev.flutter.flutter-gradle-plugin"
+    //  id 'com.android.application' version '8.1.3' apply false
+    // id 'com.android.library' version '8.1.3' apply false
+    // id 'com.google.gms.google-services' version '4.3.10'
+    id 'com.google.gms.google-services'
 }
 
 def localProperties = new Properties()
@@ -26,6 +30,13 @@ android {
     namespace "com.example.culinary_snap"
     compileSdkVersion flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
+     dexOptions {
+        javaMaxHeapSize "4g"
+    }
+     defaultConfig {
+        
+        multiDexEnabled true
+    }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -45,7 +56,8 @@ android {
         applicationId "com.example.culinary_snap"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
-        minSdkVersion flutter.minSdkVersion
+        // minSdkVersion flutter.minSdkVersion
+        minSdkVersion 21
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
@@ -64,4 +76,9 @@ flutter {
     source '../..'
 }
 
-dependencies {}
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:32.8.0')
+    implementation 'com.google.firebase:firebase-analytics'
+}
+
+// apply plugin: 'com.google.gms.google-services'

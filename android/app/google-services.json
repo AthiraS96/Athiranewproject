@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "740569353900",
+    "project_id": "flavorfinds-f1858",
+    "storage_bucket": "flavorfinds-f1858.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740569353900:android:14315e5e6bc2bd3f999909",
+        "android_client_info": {
+          "package_name": "com.example.culinary_snap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxMA0vKc5imXwN1j1vaFz0InhKFaPg2BE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

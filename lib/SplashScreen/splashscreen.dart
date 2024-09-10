@@ -1,6 +1,8 @@
+import 'package:culinary_snap/Get_started/get_started_screen.dart';
 import 'package:culinary_snap/Login/loginPage.dart';
-import 'package:culinary_snap/main.dart';
+
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:tbib_splash_screen/splash_screen.dart';
 import 'package:tbib_splash_screen/splash_screen_view.dart';
 
@@ -21,21 +23,25 @@ class _SplashScreenState extends State<SplashScreen> {
       width: double.maxFinite,
       decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage('assets/splashscreen.png'), fit: BoxFit.cover)),
-      child: SplashScreenView(
-          duration: Duration(milliseconds: 10000),
-          // backgroundColor: Color.fromARGB(255, 225, 198, 207),
-          navigateWhere: isLoaded,
-          navigateRoute: const Login(),
-          text: WavyAnimatedText(
-            "Culinary Snap",
-            textStyle: const TextStyle(
-              color: Color.fromARGB(255, 144, 12, 12),
-              fontSize: 32.0,
-              fontWeight: FontWeight.bold,
+              image: AssetImage('assets/background_image.jpg'),
+              fit: BoxFit.cover)),
+      child: Container(
+        margin: EdgeInsets.fromLTRB(40, 100, 50, 250),
+        child: SplashScreenView(
+            duration: Duration(milliseconds: 4000),
+            // backgroundColor: Color.fromARGB(255, 225, 198, 207),
+            navigateWhere: isLoaded,
+            navigateRoute: const Sliding(),
+            text: WavyAnimatedText(
+              " Flavor  Finds",
+              textStyle: GoogleFonts.acme(
+                color: Color.fromARGB(255, 248, 245, 245),
+                fontSize: 35.0,
+                fontWeight: FontWeight.bold,
+              ),
             ),
-          ),
-          imageSrc: "assets/logo_circle.png"),
+            imageSrc: "assets/Flavor Finds_With_Title.png"),
+      ),
     );
   }
 }
