@@ -1,16 +1,11 @@
-# culinary_snap
+# Flavor Finds
 
-A new Flutter project.
+A new Flutter application to find and order different cuisines around the world.
 
-## Getting Started
+Flavor Finds is a Flutter application that allows users to discover and order a variety of cuisines from around the world. Whether you're craving Italian, Chinese, Indian, or any other cuisine, this app makes it easy to explore and satisfy your taste buds.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Features
+Explore Cuisines: Browse and discover different cuisines from various countries and cultures.
+Search and Filter: Easily search for specific dishes or filter cuisines based on categories like vegetarian, vegan, spicy, etc.
+Order Food: Order your favorite dishes directly through the app with a seamless and secure checkout process.
+User Reviews and Ratings: Read reviews and ratings from other users to make informed decisions.
